@@ -74,14 +74,10 @@ function bubbleChart(selectedSample){
         type: "scatter",        
     };
     let data = [trace];
-
     let layout = {
         xaxis: {
             title: { text: "OTU ID" },            
         },
-        yaxis: {
-            title: { text: "Sample Values" },
-        }
     };
     Plotly.newPlot("bubble", data, layout);
 }
